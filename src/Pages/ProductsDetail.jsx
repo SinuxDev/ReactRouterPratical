@@ -1,15 +1,22 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const ProductsDetail = () => {
-
+    const navigate = useNavigate();
     const {title} = useParams();
+    const navigatehandler = () => {
+      navigate("/products")
+    }
 
   return (
-    <>
+    <>  
+      <h1>Product Details Page</h1>
         <h1>
-            I'm product detail {title}
+           Product Title -  {title}
         </h1>
+      <div className='product-btn-ctr'>
+      <button onClick={navigatehandler} className='product-btn' >Go Back to Product Page</button>
+      </div>
     </>
   )
 }

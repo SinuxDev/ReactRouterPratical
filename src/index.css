@@ -28,13 +28,15 @@ h1{
     padding: 40px 0px;
 }
 
-.error-btn-ctr{
+.error-btn-ctr,
+.product-btn-ctr{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.error-btn{
+.error-btn,
+.product-btn{
     font-size: 20px;
     padding: 15px 10px;
     border: none;

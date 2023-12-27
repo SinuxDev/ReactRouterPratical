@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const PRODUCTS = [
   {
@@ -15,17 +16,19 @@ const PRODUCTS = [
     title : "Orange",
     description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore natus minima amet deserunt qui ullam id quibusdam repellat repellendus fugit labore distinctio alias illum quod, eos, quidem adipisci et! Earum."
   }
-]
+];
 
 const Products = () => {
   return (
     <>
         {
           PRODUCTS.map((product) => (
-            <div className="product-list" key={product.id} >
-              <p className="title"> {product.title} </p>
-              <p> {product.description} </p>
-            </div>
+            <Link to={`/product/${product.title}`} >
+              <div className="product-list" key={product.id} >
+                <p className="title"> {product.title} </p>
+                <p> {product.description} </p>
+              </div>
+            </Link>
           ))
         }
     </>
