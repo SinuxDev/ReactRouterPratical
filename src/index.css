@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: darksalmon;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+a.active{
+    color: aqua;
+    font-style: italic;
+    font-size: 20px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.error-btn-ctr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-btn{
+    font-size: 20px;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: cornflowerblue;
+}
