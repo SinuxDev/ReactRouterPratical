@@ -42,3 +42,20 @@ h1{
     border-radius: 8px;
     background-color: cornflowerblue;
 }
+
+.product-list{
+    width: 80%;
+    margin: auto;
+    padding: 10px 10px;
+}
+
+.product-list p{
+    text-align: center;
+    background-color: cornflowerblue;
+    padding: 10px 10px;
+}
+
+.title{
+    font-size: 19px;
+    font-weight: 400px;
+}
