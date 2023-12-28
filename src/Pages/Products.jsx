@@ -7,7 +7,7 @@ const Products = () => {
     <>
         {
           USERS.map((user) => (
-            <Link to={`/product/${user.id}`} key={user.id}  >
+            <Link to={`/user/${user.id}`} key={user.id}  >
               <div className="product-list">
                 <User userName={user.name} />
                 <p> Username :  {user.username} </p>
@@ -28,7 +28,6 @@ export const loader = async () => {
     throw json({ message:"Can't get posts now"},{status:500});
   }else{
     const data = await response.json();
-    console.log(data);
     return data;
   }
 };

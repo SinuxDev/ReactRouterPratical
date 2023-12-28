@@ -4,18 +4,20 @@ import User from '../Components/User';
 
 const ProductsDetail = () => {
     const user = useLoaderData();
-    const {name,email,website} = user
     const navigate = useNavigate();
     const navigatehandler = () => {
-      navigate("/products")
+      navigate("/users")
     }
 
   return (
     <>  
-         <h1 className='data-title' > {name} </h1>
+         <h1 className='data-title' >  </h1>
           <div className='data2'>
-            <User userName={user.name} />
-            <p>  </p>
+            <h1> Real Name : {user.name} </h1>
+            <p> Username : {user.username} </p>
+            <p> Email :  {user.email} </p>
+            <h2> Address : {user.address.street} </h2>
+            <span></span>
           </div>
       <div className='product-btn-ctr'>
       <button onClick={navigatehandler} className='product-btn' >Go Back to UserPages</button>
@@ -27,7 +29,7 @@ const ProductsDetail = () => {
 export default ProductsDetail
 
 export const loader = async ({request,params}) => {
-  const response = await fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`)
+  const response = await fetch(`https://jsonplaceholder.typicode.com/users/${params.userID}`)
 
   if(!response.ok){
     throw json({message : "Can't Found this Post"},{status : 404});
