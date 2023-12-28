@@ -48,13 +48,13 @@ h1{
 .product-list{
     width: 80%;
     margin: auto;
-    padding: 10px 10px;
+    padding: 20px 10px;
 }
 
 .product-list p{
     text-align: center;
     background-color: cornflowerblue;
-    padding: 10px 10px;
+    padding: 5px 10px;
 }
 
 /* .title{
