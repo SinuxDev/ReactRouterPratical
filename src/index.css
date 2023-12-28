@@ -57,7 +57,29 @@ h1{
     padding: 10px 10px;
 }
 
-.title{
+/* .title{
     font-size: 19px;
     font-weight: 400px;
+} */
+
+.up{
+    background-color: cornflowerblue;
+    font-weight: 600;
+    text-transform: capitalize;
 }
+
+.data-title{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.data2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 10px;
+}
+
