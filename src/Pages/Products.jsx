@@ -36,3 +36,14 @@ const Products = () => {
 }
 
 export default Products
+
+const loader = async () => {
+  const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+  
+  if(!response.ok){
+    // code...
+  }else{
+    const data = await response.json();
+    console.log(data);
+  }
+}
